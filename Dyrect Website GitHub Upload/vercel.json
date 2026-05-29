@@ -1,0 +1,10 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/product-registration-software", "destination": "/Product%20Registration%20Software.html" },
+    { "source": "/warranty-claims-management-software", "destination": "/Warranty%20Claims%20Management%20Software.html" },
+    { "source": "/extended-warranty-software", "destination": "/Extended%20Warranty%20Software.html" },
+    { "source": "/home", "destination": "/Home%20Page.html" }
+  ]
+}

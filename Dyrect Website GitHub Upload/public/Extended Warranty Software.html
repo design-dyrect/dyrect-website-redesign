@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dyrect — Extended Warranty Software</title>
+<link rel="icon" href="assets/logo-blue-icon.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="shared-responsive.css">
+<link rel="stylesheet" href="pr-responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script>
+  window.EW_TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "primaryColor": "#2437F6",
+    "show_logos": true,
+    "show_platform": true,
+    "show_features": true,
+    "show_capabilities": true,
+    "show_stats": true,
+    "show_testimonials": true,
+    "show_integrations": true,
+    "show_blog": true,
+    "show_faq": true,
+    "show_cta": true
+  }/*EDITMODE-END*/;
+</script>
+
+<!-- Shared components (same files Home + PR + WC pages use) -->
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="shared-nav.jsx"></script>
+<script type="text/babel" src="sections-a.jsx"></script>
+<script type="text/babel" src="sections-b.jsx"></script>
+
+<!-- Page-specific code -->
+<script type="text/babel" src="ew-mocks.jsx"></script>
+<script type="text/babel" src="ew-sections.jsx"></script>
+<script type="text/babel" src="ew-app.jsx"></script>
+</body>
+</html>
